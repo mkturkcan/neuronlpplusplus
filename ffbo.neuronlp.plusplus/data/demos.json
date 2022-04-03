@@ -1,0 +1,281 @@
+{
+    "neuronlp_plusplus": {
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "Let's query for patchy local neurons! NeuroNLP++ allows us to use free-form language to try to find cell types."}],
+        ["search", {"query": "what are patchy local neurons"}],
+        ["notify", {"message": "Done! Now you can look through the results in the information panel on the left.", "pause": 8000}],
+        ["notify", {"message": "You can use the blue 'Add to Workspace' button to add neurons to your workspace.", "pause": 8000}],
+        ["click", {"selector": "#plusplusresult100", "pause": 8000}],
+        ["notify", {"message": "Done! Try it yourself!", "pause": 0}]
+      ],
+      "neuron3d": false,
+      "keyword": "NeuroNLP++ Queries: Free-Form Queries",
+      "description": "Use free-form queries.",
+      "category": "New Features"
+    },
+    "neuronlp_plusplusb": {
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "As long as we know some facts about our known neurons of interest, we can find them via NeuroNLP++."}],
+        ["search", {"query": "which neurons are known to respond to carbon dioxide?"}],
+        ["notify", {"message": "Done! Now you can look through the results in the information panel on the left.", "pause": 1000}],
+        ["notify", {"message": "You can use the blue 'Add to Workspace' button to add neurons to your workspace.", "pause": 0}]
+      ],
+      "neuron3d": false,
+      "keyword": "NeuroNLP++ Queries: Facts about Neurons",
+      "description": "Use known facts about search terms of interest.",
+      "category": "New Features"
+    },
+    "neuronlp_plusplusc": {
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "Sometimes we are looking for data on neuron subtypes. In such a scenario, we can use the search results."}],
+        ["search", {"query": "What are Kenyon cell subtypes?"}],
+        ["notify", {"message": "Done! Now you can look through the results in the information panel on the left.", "pause": 1000}],
+        ["notify", {"message": "You can use the blue 'Add to Workspace' button to add neurons to your workspace.", "pause": 0}]
+      ],
+      "neuron3d": false,
+      "keyword": "NeuroNLP++ Queries: Search by Keyword",
+      "description": "Search results when there are multiple matches.",
+      "category": "New Features"
+    },
+    "neuronlp_plusplus_antennallobelocalneurons": {
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "Let us query for the types of local neurons in the antennal lobe."}],
+        ["search", {"query": "what are the types of local neurons in the antennal lobe?"}],
+        ["notify", {"message": "Done! Now you can look through the results in the information panel on the left.", "pause": 1000}],
+        ["notify", {"message": "You can use the blue 'Add to Workspace' button to add neurons to your workspace.", "pause": 0}]
+      ],
+      "neuron3d": false,
+      "keyword": "NeuroNLP++ Queries: Antennal Lobe Local Neurons",
+      "description": "Search results when there are multiple matches.",
+      "category": "Early Olfactory System Antennal Lobe"
+    },
+    "neuronlp_plusplusd": {
+      "script": [
+        ["notify", {"message": "Hey there!"}],
+        ["notify", {"message": "In this complex demo, we will be exploring the clock neurons in the Drosophila brain."}],
+        ["notify", {"message": "The specific keyword we are looking for are 'period-expressing' neurons in this scenario."}],
+        ["search", {"query": "what are period-expressing neurons?"}],
+        ["notify", {"message": "Done! Now you can look through the results in the information panel on the left.", "pause": 1000}],
+        ["notify", {"message": "Starting with search, we find a number of cell types. Now, we will add these neurons manually to our workspace.", "pause": 1000}],
+        ["notify", {"message": "First, we have the so-called lateral posterior neurons (LPN)."}],
+        ["search", {"query": "add $LPN$"}],
+        ["notify", {"message": "Then, we have the lateral neurons (LNs). Since 'LNs' are usually a term used for local neurons, we will add them using their specific names."}],
+        ["search", {"query": "add $s-LNv$"}],
+        ["search", {"query": "add $l-LNv$"}],
+        ["search", {"query": "add $LNd$"}],
+        ["notify", {"message": "s-LNv neurons are the small ventral lateral neurons. l-LNv neurons are the large ventral lateral neurons. LNd neurons are the dorsal lateral neurons."}],
+        ["notify", {"message": "Then, we have the DN neurons."}],
+        ["search", {"query": "add $DN1$"}],
+        ["search", {"query": "add $DN3$"}],
+        ["notify", {"message": "These are the circadian clock neurons labeled in the Hemibrain dataset."}],
+        ["notify", {"message": "We hope you have enjoyed this example!"}]
+      ],
+      "neuron3d": false,
+      "keyword": "NeuroNLP++ Queries: Clock Neurons",
+      "description": "Learn about the circadian clock-related neurons in Drosophila.",
+      "category": "New Features"
+    },
+    "neuronlp_pluspluse": {
+      "script": [
+        ["notify", {"message": "Hey there!"}],
+        ["notify", {"message": "In this complex demo, we start exploring the mushroom body, a neuropil heavily involved in associative learning."}],
+        ["notify", {"message": "Kenyon cells (which are neurons) receive the main input to mushroom body. To explore it, we should explore Kenyon cells."}],
+        ["search", {"query": "what types of Kenyon cells exist?"}],
+        ["notify", {"message": "Done! Now you can look through the results in the information panel on the left and see various Kenyon cell types.", "pause": 1000}],
+        ["notify", {"message": "Starting with search, we find a number of cell types. Now, we will add these neurons manually to our workspace.", "pause": 1000}],
+        ["notify", {"message": "There are 8 KC subtypes. Let us add some to our workspace. Let us add the KCs related to the gamma lobe. "}],
+        ["notify", {"message": "There are 8 KC subtypes. Let us add some to our workspace. Let us add the KCs related to the gamma lobe. "}],
+        ["search", {"query": "add $KCg-m$"}],
+        ["search", {"query": "add $KCg-d$"}],
+        ["search", {"query": "add $KCg-s$"}],
+        ["notify", {"message": "Here, '-m' stands for main, '-d' stands for dorsal, and '-s' stands for super. Let us now add the KCs related to the alpha and beta lobes."}],
+        ["search", {"query": "add $KCab-p$"}],
+        ["search", {"query": "add $KCab-s$"}],
+        ["search", {"query": "add $KCab-c$"}],
+        ["notify", {"message": "Here, '-s' stands for surface and '-c' stands for core. Let us now add the KCs related to the alpha' and beta' lobes."}],
+        ["search", {"query": "add $KCa'b'-ap$"}],
+        ["search", {"query": "add $KCa'b'-m$"}],
+        ["notify", {"message": "These are the Kenyon cells labeled in the Hemibrain dataset."}],
+        ["notify", {"message": "We hope you have enjoyed this example!"}]
+      ],
+      "neuron3d": false,
+      "keyword": "NeuroNLP++ Queries: Mushroom Body: Kenyon Cells",
+      "description": "Learn about the Kenyon cells in Drosophila.",
+      "category": "Mushroom Body"
+    },
+    "neuronlp_plusplus_lateralhorn": {
+      "script": [
+        ["notify", {"message": "Hey there!"}],
+        ["notify", {"message": "In this demo we start exploring the lateral horn."}],
+        ["notify", {"message": "The function of lateral horn remains largely elusive, but a comprehensive naming scheme already exists."}],
+        ["notify", {"message": "Let us explore these cell types!"}],
+        ["search", {"query": "what cell types are there in lateral horn?"}],
+        ["notify", {"message": "Done! Now you can look through the results in the information panel on the left and see various lateral horn cell types.", "pause": 1000}],
+        ["notify", {"message": "We hope you have enjoyed this example!"}]
+      ],
+      "neuron3d": false,
+      "keyword": "NeuroNLP++ Queries: Lateral Horn: Cell Types",
+      "description": "Learn about the cell types in the lateral horn.",
+      "category": "Lateral Horn"
+    },
+    "cell_connectivity": {
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "Let's query for VA1v projection neurons!"}],
+        ["search", {"query": "show /rVA1v_(.*)PN_(.*)/r"}],
+        ["notify", {"message": "Now, let us click the 'Show Connectivity Graph' button on the top right."}],
+        ["click", {"uiBtn": {"type": "showGraph"}}],
+        ["notify", {"message": "Done! Try it yourself!", "pause": 0}]
+      ],
+      "neuron3d": false,
+      "keyword": "Connectivity Graph Visualization",
+      "description": "Visualize the connectivity at single-cell scale.",
+      "category": "Connectivity"
+    },
+    "type_connectivity": {
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "Let's query for VA1v neurons!"}],
+        ["search", {"query": "show $VA1v$"}],
+        ["notify", {"message": "Now, let us click the 'Show Cell-Type Connectivity Graph' button on the top right."}],
+        ["click", {"uiBtn": {"type": "showCellGraph"}}],
+        ["notify", {"message": "Done! Try it yourself!", "pause": 0}]
+      ],
+      "neuron3d": false,
+      "keyword": "Cell-Type Connectivity Graph Visualization",
+      "description": "Visualize the connectivity at cell-type scale.",
+      "category": "Connectivity"
+    },
+    "basic_query1": {
+      "keyword": "Name-based Queries",
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "A quick way to find neurons whose name contains a string is to use the $$ syntax.", "pause": 5000}],
+        ["notify", {"message": "The following query searches for all neurons whose name contains the string 'MBON'.", "pause": 5000}],
+        ["search", {"query": "show $MBON$"}],
+        ["notify", {"message": "Regular expression can be used with the syntax /rRE/r, where RE should be replaced by the regex string. The following query is the equivalent to the previous one:", "pause": 5000}],
+        ["search", {"query": "show /r(.*)MBON(.*)/r"}],
+        ["notify", {"message": "Since MBON is a commonly known neuron type, one can also search for MBONs with the following query", "pause": 5000}],
+        ["search", {"query": "show MBON"}],
+        ["notify", {"message": "Try it yourself!", "pause": 0}]
+      ],
+      "description": "Query with string match, Regular Expression, and commonly known names of neuron types",
+      "category": "Basic Queries"
+    },
+    "basic_query2": {
+    "keyword": "Hemibrain BodyID-based Queries",
+    "script": [
+      ["notify", {"message": "Hi there!"}],
+      ["notify", {"message": "Let's load multiple neurons using their Hemibrain Body IDs.", "pause": 1000}],
+      ["search", {"query": "show /:referenceId:[5813014882, 912147912, 880875861]"}],
+      ["notify", {"message": "Try it yourself!", "pause": 0}]
+    ],
+    "description": "Load a list of neurons using their Hemibrain Body IDs using: show /:referenceId:[bodyId1, bodyId2, ...]",
+    "category": "Basic Queries"
+  },
+    "basic_query3": {
+      "keyword": "Arborization-based Queries",
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "Let's show all neurons that have arborizations in right AOTU.", "pause": 5000}],
+        ["search", {"query": "show neurons in right AOTU"}],
+        ["notify", {"message": "Let's show neurons that have input site from the NEUROPIL EB and has output sites in the SUBREGION PB glomerulus R3.", "pause": 5000}],
+        ["search", {"query": "show neurons that have dendrites in EB and axons in PB glomerulus R3"}],
+        ["notify", {"message": "Try it yourself!", "pause": 0}]
+      ],
+      "description": "Querying neurons based on arborization patterns.",
+      "category": "Basic Queries"
+    },
+    "basic_query4": {
+        "keyword": "Synaptic Partners-based Queries",
+        "script": [
+          ["notify", {"message": "Hi there!"}],
+          ["notify", {"message": "Let's display a EPG (EB-PB-LAL) neuron that has outputs in PB glomerulus R5."}],
+          ["search", {"query": "show EPG neurons that has outputs in PB glomerulus R5"}],
+          ["notify", {"message": "To add PEG (PB-EB-LAL) neurons that are postsyaptic to the neurons in the current workspace, and has at least 10 synapses from any one of these neurons, we use the following query.", "pause": 1000}],
+          ["search", {"query": "add postsynaptic PEG neurons with at least 10 synapses"}],
+          ["notify", {"message": "Try it yourself!", "pause": 0}]
+        ],
+        "description": "Querying neurons based on synaptic partners",
+        "category": "Basic Queries"
+      },
+    "basic_query5": {
+      "keyword": "Coloring",
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "Let's display α'-lobe compartment 1 MBONs on the right hemisphere.", "pause": 5000}],
+        ["search", {"query": "show MBON in alpha'1_r"}],
+        ["notify", {"message": "To color these MBONs cyan", "pause": 3000}],
+        ["search", {"query": "color MBON in alpha'1_r cyan"}],
+        ["notify", {"message": "Let's add DANs innervating the same compartment", "pause": 3000}],
+        ["search", {"query": "add DAN in alpha'1_r"}],
+        ["notify", {"message": "Try it yourself!", "pause": 0}],
+        ["notify", {"message": "To color these DAN purple", "pause": 3000}],
+        ["search", {"query": "color DAN in alpha'1_r purple"}],
+        ["notify", {"message": "Try it yourself!", "pause": 0}]
+      ],
+      "description": "Color groups of neurons",
+      "category": "Basic Queries"
+    },
+    "hemibrain_1": {
+      "keyword": "OSN",
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "Let's query for olfactory sensory neurons!"}],
+        ["search", {"query": "show OSN"}],
+        ["notify", {"message": "Try it yourself!", "pause": 0}]
+      ],
+      "description": "Show olfactory sensory neurons.",
+      "category": "Early Olfactory System"
+    },
+    "hemibrain_2": {
+      "keyword": "AL PN",
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "Let's query for antennal lobe projection neurons!"}],
+        ["search", {"query": "show PN"}],
+        ["notify", {"message": "Try it yourself!", "pause": 0}]
+      ],
+      "description": "Show antennal lobe projection neurons.",
+      "category": "Early Olfactory System"
+    },
+    "hemibrain_3": {
+      "keyword": "AL LN",
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "Let's query for local neurons in antennal lobe!"}],
+        ["search", {"query": "Show $LN$"}],
+        ["notify", {"message": "We accidentally received some non-antennal lobe local neurons. Let's remove them!", "pause": 10000}],
+        ["search", {"query": "keep $olfactory LN$"}],
+        ["notify", {"message": "Try it yourself!", "pause": 0}]
+      ],
+      "description": "Show local neurons in antennal lobe.",
+      "category": "Early Olfactory System"
+    },
+    "hemibrain_4": {
+      "keyword": "AL mPN",
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "Let's query for multiglomerular projection neurons!"}],
+        ["search", {"query": "show mPN"}],
+        ["notify", {"message": "Try it yourself!", "pause": 0}]
+      ],
+      "description": "Show multiglomerular projection neurons.",
+      "category": "Early Olfactory System"
+    },
+    "hemibrain_5": {
+      "keyword": "VA1v PN",
+      "script": [
+        ["notify", {"message": "Hi there!"}],
+        ["notify", {"message": "Let's query for VA1v projection neurons!"}],
+        ["search", {"query": "add /rVA1v_(.*)PN_(.*)/r"}],
+        ["notify", {"message": "Try it yourself!", "pause": 0}]
+      ],
+      "description": "Show VA1v projection neurons.",
+      "category": "Early Olfactory System"
+    }
+}
